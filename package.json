@@ -1,0 +1,20 @@
+{
+    "name": "multi-rtsp-grid",
+    "version": "1.0.0",
+    "description": "Multi-camera RTSP grid viewer using rtsp-multi-stream",
+    "main": "server.js",
+    "type": "commonjs",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node server.js"
+    },
+    "dependencies": {
+        "@types/jest": "^30.0.0",
+        "@types/node": "^25.3.3",
+        "@types/react": "^19.2.14",
+        "@types/react-dom": "^19.2.3",
+        "express": "^4.18.2",
+        "rtsp-multi-stream": "./rtsp-multi-stream",
+        "typescript": "^5.9.3"
+    }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "left",
+    "rtspUrl": "rtsp://admin:ivSNivSN@192.168.1.110/LiveMedia/ch1/Media1/trackID=1",
+    "location": "sahagun",
+    "enabled": true,
+    "fps": 25
+  },
+  {
+    "name": "right",
+    "rtspUrl": "rtsp://admin:ivSNivSN@192.168.1.108/LiveMedia/ch1/Media1/trackID=1",
+    "location": "tultitlan",
+    "enabled": false,
+    "fps": 25
+  }
+]
