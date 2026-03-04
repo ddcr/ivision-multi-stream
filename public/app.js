@@ -37,7 +37,7 @@ async function loadCameras() {
 
     const location = document.createElement("div");
     location.className = "camera-location";
-    location.innerText = cam.location || "";
+    location.innerText = cam.location || "UNKNOWN";
 
     const status = document.createElement("div");
     status.className = "status";

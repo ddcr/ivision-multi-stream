@@ -26,12 +26,16 @@ body {
   }
 
   .camera-location {
-    font-size: 0.85em;
-    color: #888;
-    margin-top: 2px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: rgba(0,0,0,0.6);
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
     font-style: italic;
+    color: #ccc;
   }
-
   .camera {
     position: relative;
     background: black;
