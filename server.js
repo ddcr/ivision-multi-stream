@@ -4,8 +4,8 @@ const path = require("path");
 const { VideoStream } = require("rtsp-multi-stream");
 
 const app = express();
-const PORT = 3000;
-const BASE_WS_PORT = 10000;
+const PORT = parseInt(process.env.PORT, 10) || 3000;
+const BASE_WS_PORT = parseInt(process.env.BASE_WS_PORT, 10) || 10000;
 
 const camerasPath = path.join(__dirname, "cameras.json");
 

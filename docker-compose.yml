@@ -4,9 +4,12 @@ services:
   rtsp-grid:
     image: ivision/multi-axis-stream:dev
     build: .
+    environment:
+      - PORT=${PORT:-3000}
+      - BASE_WS_PORT=${BASE_WS_PORT:-52000}
     ports:
-      - "13000:3000"
-      - "10000-10030:10000-10030"
+      - "127.0.0.1:13000:3000"
+      - "127.0.0.1:52000-52030:52000-52030"
     volumes:
       - ./cameras.json:/app/cameras.json
     privileged: true
